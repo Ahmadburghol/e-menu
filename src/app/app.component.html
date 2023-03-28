@@ -1,0 +1,81 @@
+<div class="search-wrapper sticky-top" [style.background-color]="isNavCollapse ? '#ffc107' : 'transparent'"
+[class.shadow-sm]="isNavCollapse">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="d-inline-block">
+        <i class="fas fa-bars nav-icon"></i>
+      </div>
+      <div class="d-inline-block">
+        <img class="img-logo" src="https://bl6pap004files.storage.live.com/y4m2BSxwOsIuTnc01gOOuS3KJ427ZFgXjpskhELusS1OWP1nSkBwECOoRE4OkEpPtjHQzhFjdAYh1txnDh4VFaPpB7FZFg5I3Evu9PJD6dXWIDpaY_aqBSniBS5DG-NA34J8T7ylbhLPgaOaPw0KTBmzYnDZ8e6RmCl-eTxBcRpZQJKkuPmh9zfCfWs31kB6-5M?width=241&height=51&cropmode=none"/>
+      </div>
+      <div class="d-inline-block" (click)="collapse.toggle()">
+        <i class="fas fa-search nav-icon"></i>
+      </div>
+    </div>
+    <div #collapse="ngbCollapse" [(ngbCollapse)]="!isCollapsed">
+      <input type="text" class="form-control input-search" placeholder="Search Products...">
+    </div>
+  </div>
+</div>
+
+<ngb-carousel>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img src="https://picsum.photos/id/44/1920/600" alt="Random second slide">
+    </div>
+    <div class="carousel-caption">
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img src="https://picsum.photos/id/66/1920/600" alt="Random third slide">
+    </div>
+    <div class="carousel-caption">
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+
+<div class="container px-0">
+  <h3 class="main-title">promotions</h3>
+  <p class="sub-title">view more</p>
+  <drag-scroll #nav [scroll-x-wheel-enabled]="true">
+    <div *ngFor="let p of productList; let i = index" drag-scroll-item>
+      <div class="card shadow-sm">
+        <img [src]="p.image" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">{{p.title}}</h6>
+
+          <i class="fas fa-star text-warning" *ngIf="p.rating > 0"></i>
+          <i class="fas fa-star text-warning" *ngIf="p.rating > 1"></i>
+          <i class="fas fa-star text-warning" *ngIf="p.rating > 2"></i>
+          <i class="fas fa-star text-warning" *ngIf="p.rating > 3"></i>
+          <i class="fas fa-star text-warning" *ngIf="p.rating > 4"></i>
+
+          <i class="far fa-star" *ngIf="p.rating < 5"></i>
+          <i class="far fa-star" *ngIf="p.rating < 4"></i>
+          <i class="far fa-star" *ngIf="p.rating < 3"></i>
+          <i class="far fa-star" *ngIf="p.rating < 2"></i>
+          <i class="far fa-star" *ngIf="p.rating < 1"></i>
+
+          <p class="card-price">RM {{p.price | number: '1.2-2' }}</p>
+        </div>
+      </div>
+    </div>
+  </drag-scroll>
+
+  <div class="bottom-placeholder"></div>
+  <div class="bottom-placeholder"></div>
+  <div class="bottom-placeholder"></div>
+  <div class="bottom-placeholder"></div>
+</div>
+
+<div class="cart-wrapper fixed-bottom text-center">
+  <button class="btn btn-dark btn-cart w-100">
+  <i class="fas fa-cart-plus me-2"></i> View Cart
+</button>
+  <small class="author d-block">Designed by <a href="https://github.com/weishenggg98" class="author-link">weisheng98</a>. Powered by <i class="fab fa-angular"></i> + <i class="fab fa-bootstrap"></i></small>
+</div>
