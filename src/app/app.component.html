@@ -54,7 +54,7 @@
   <p class="sub-title">description</p>
   <drag-scroll #nav [scroll-x-wheel-enabled]="true">
     <div *ngFor="let p of categoryList; let i = index" drag-scroll-item>
-      <div class="card shadow-sm">
+      <div class="card shadow-sm" (click)="selectCategory(i)">
         <img [src]="p.image" class="card-img-top" alt="..." />
         <div class="card-body">
           <h6>{{ p.title }}</h6>
@@ -65,9 +65,13 @@
       </div>
     </div>
   </drag-scroll>
-
-  <div class="bottom-placeholder"></div>
-  <div class="bottom-placeholder"></div>
-  <div class="bottom-placeholder"></div>
-  <div class="bottom-placeholder"></div>
+  <div *ngIf="selectedCategory != null" class="conteiner products-continer">
+    <div class="product" *ngFor="let product of selectedCategory.items">
+      <img [src]="product.image" class="product-image" />
+      <div class="product-details">
+        <h6>{{ product.name }}</h6>
+        <h6>{{ product.price }}</h6>
+      </div>
+    </div>
+  </div>
 </div>

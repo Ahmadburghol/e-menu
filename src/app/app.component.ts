@@ -12,6 +12,8 @@ export class AppComponent {
   jsonData = data as Array<any>;
   direction = '';
 
+  selectedCategory: Category | null = null;
+
   public isCollapsed = false;
 
   isNavCollapse = false;
@@ -29,6 +31,7 @@ export class AppComponent {
     for (let i = 0; i < this.jsonData.length; i++) {
       let product = new Category(this.jsonData[i]);
       this.categoryList.push(product);
+      if (i == 0) this.selectedCategory = this.categoryList[i];
     }
   }
 
@@ -43,6 +46,10 @@ export class AppComponent {
 
   scrollToRight(): void {
     document.getElementById('scroll-1')!.scrollLeft += 400;
+  }
+
+  selectCategory(index: any) {
+    this.selectedCategory = this.categoryList[index];
   }
 }
 

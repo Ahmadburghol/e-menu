@@ -127,3 +127,30 @@ ngb-carousel {
   vertical-align: middle;
   cursor: pointer;
 }
+
+.products-continer {
+  height: calc(100vh - 480px);
+  overflow-y: scroll;
+}
+
+.product {
+  height: 4.5rem;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.product .product-image {
+  display: inline-block;
+  float: left;
+}
+
+.product .product-details {
+  margin-left: 10px;
+  display: inline-block;
+  float: left;
+}
