@@ -12,6 +12,7 @@
 .card > img {
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
+  height: 170px;
 }
 
 .card-title {

@@ -1,6 +1,7 @@
 [
   {
     "title": "Milkshakes",
+    "image": "https://preppykitchen.com/wp-content/uploads/2021/04/Milkshake-Recipe-Card.jpg",
     "type": "dairy",
     "description": "Raw organic brown eggs in a basket",
     "filename": "0.jpg",
@@ -10,6 +11,7 @@
     "rating": 5
   },
   {
+    "image": "https://media.istockphoto.com/id/1127182311/photo/fruit-juices.jpg?s=612x612&w=0&k=20&c=M52yyMvgFUNkPtN9PACB9auB5uuA1CD6zcRsCTX8JsM=",
     "title": "Fresh juice",
     "type": "fruit",
     "description": "Sweet fresh stawberry on the wooden table",
@@ -20,6 +22,7 @@
     "rating": 4
   },
   {
+    "image": "https://becs-table.com.au/wp-content/uploads/2014/01/ice-cream-1.jpg",
     "title": "Ice cream",
     "type": "vegetable",
     "description": "Asparagus with ham on the wooden table",
@@ -30,6 +33,7 @@
     "rating": 3
   },
   {
+    "image": "https://thebarista.co.uk/wp-content/uploads/2022/06/pexels-royston-d-souza-4728009.jpg",
     "title": "Barista",
     "type": "dairy",
     "description": "Glass of green smoothie with quail egg's yolk, served with cocktail tube, green apple and baby spinach leaves over tin surface.",
@@ -40,6 +44,7 @@
     "rating": 4
   },
   {
+    "image": "https://media-cdn.tripadvisor.com/media/photo-s/1a/bb/6b/44/crepes-vs-waffles.jpg",
     "title": "Waffle & Crepe",
     "type": "vegetable",
     "description": "Raw legums on the wooden table",
@@ -50,6 +55,7 @@
     "rating": 2
   },
   {
+    "image": "https://img.taste.com.au/hbNtzI2Q/taste/2021/08/clinkers-cake-173208-2.jpg",
     "title": "Cake",
     "type": "dairy",
     "description": "Baking cake in rural kitchen - dough  recipe ingredients (eggs, flour, sugar) on vintage wooden table from above.",
@@ -60,6 +66,7 @@
     "rating": 4
   },
   {
+    "image": "https://static.vecteezy.com/system/resources/previews/002/412/377/original/coffee-cup-logo-coffee-shop-icon-design-free-vector.jpg",
     "title": "Hot Drinks",
     "type": "vegetable",
     "description": "Italian traditional pesto with basil, chesse and oil",

@@ -60,7 +60,6 @@ class Product {
     this.description = product.description;
     this.price = product.price;
     this.rating = product.rating;
-    this.image =
-      'https://alcodesbase.blob.core.windows.net/generic/sections-default-image.png';
+    this.image = product.image;
   }
 }
