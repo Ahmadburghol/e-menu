@@ -5,13 +5,12 @@ import data from '../assets/data/products.json';
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
-
 export class AppComponent {
   productList: Product[] = new Array<Product>();
   jsonData = data as Array<any>;
-  direction = "";
+  direction = '';
 
   public isCollapsed = false;
 
@@ -24,10 +23,10 @@ export class AppComponent {
     }
   }
 
-  constructor(private scroll: ViewportScroller) { }
+  constructor(private scroll: ViewportScroller) {}
 
   ngOnInit() {
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < this.jsonData.length; i++) {
       let product = new Product(this.jsonData[i]);
       this.productList.push(product);
     }
@@ -61,8 +60,7 @@ class Product {
     this.description = product.description;
     this.price = product.price;
     this.rating = product.rating;
-    this.image = 'https://alcodesbase.blob.core.windows.net/generic/sections-default-image.png';
+    this.image =
+      'https://alcodesbase.blob.core.windows.net/generic/sections-default-image.png';
   }
 }
-
-
