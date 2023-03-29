@@ -13,7 +13,27 @@
     "items": [
       {
         "image": "https://place-hold.it/60x60",
-        "name": "test",
+        "name": "Oreo / أوريو",
+        "price": 1.5
+      },
+      {
+        "image": "https://place-hold.it/60x60",
+        "name": "Nutella / نوتيلا",
+        "price": 1.5
+      },
+      {
+        "image": "https://place-hold.it/60x60",
+        "name": "Cheesecake / تشيز كيك",
+        "price": 1.5
+      },
+      {
+        "image": "https://place-hold.it/60x60",
+        "name": "Ferraro / فريرو",
+        "price": 2.0
+      },
+      {
+        "image": "https://place-hold.it/60x60",
+        "name": "Nutella / نوتيلا",
         "price": 1.5
       }
     ]

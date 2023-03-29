@@ -70,7 +70,7 @@
       <img [src]="product.image" class="product-image" />
       <div class="product-details">
         <h6>{{ product.name }}</h6>
-        <h6>{{ product.price }}</h6>
+        <h6>{{ product.price | number: '1.2-2' }}</h6>
       </div>
     </div>
   </div>
