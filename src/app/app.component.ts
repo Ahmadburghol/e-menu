@@ -8,7 +8,7 @@ import data from '../assets/data/products.json';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  productList: Product[] = new Array<Product>();
+  categoryList: Category[] = new Array<Category>();
   jsonData = data as Array<any>;
   direction = '';
 
@@ -27,8 +27,8 @@ export class AppComponent {
 
   ngOnInit() {
     for (let i = 0; i < this.jsonData.length; i++) {
-      let product = new Product(this.jsonData[i]);
-      this.productList.push(product);
+      let product = new Category(this.jsonData[i]);
+      this.categoryList.push(product);
     }
   }
 
@@ -46,7 +46,7 @@ export class AppComponent {
   }
 }
 
-class Product {
+class Category {
   title: string;
   type: string;
   description: string;
@@ -54,14 +54,30 @@ class Product {
   rating: number;
   image: string;
   label: string;
+  items: Product[];
 
+  constructor(category: any = {}) {
+    this.title = category.title;
+    this.type = category.type;
+    this.description = category.description;
+    this.price = category.price;
+    this.rating = category.rating;
+    this.image = category.image;
+    this.label = category.arLabel;
+    this.items = [];
+    if (category.items != null)
+      for (var i = 0; i < category.items.length; ++i)
+        this.items.push(new Product(category.items[i]));
+  }
+}
+
+class Product {
+  image: string;
+  name: string;
+  price: number;
   constructor(product: any = {}) {
-    this.title = product.title;
-    this.type = product.type;
-    this.description = product.description;
-    this.price = product.price;
-    this.rating = product.rating;
     this.image = product.image;
-    this.label = product.arLabel;
+    this.name = product.name;
+    this.price = product.price;
   }
 }

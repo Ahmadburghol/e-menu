@@ -9,7 +9,14 @@
     "width": 400,
     "price": 28.1,
     "rating": 5,
-    "arLabel": "ميلك شيك"
+    "arLabel": "ميلك شيك",
+    "items": [
+      {
+        "image": "https://place-hold.it/300x500/666",
+        "name": "test",
+        "price": 1.5
+      }
+    ]
   },
   {
     "image": "https://media.istockphoto.com/id/1127182311/photo/fruit-juices.jpg?s=612x612&w=0&k=20&c=M52yyMvgFUNkPtN9PACB9auB5uuA1CD6zcRsCTX8JsM=",

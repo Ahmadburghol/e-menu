@@ -53,23 +53,12 @@
   <h3 class="main-title">Brand Name</h3>
   <p class="sub-title">description</p>
   <drag-scroll #nav [scroll-x-wheel-enabled]="true">
-    <div *ngFor="let p of productList; let i = index" drag-scroll-item>
+    <div *ngFor="let p of categoryList; let i = index" drag-scroll-item>
       <div class="card shadow-sm">
         <img [src]="p.image" class="card-img-top" alt="..." />
         <div class="card-body">
-          <h6 class="card-title">{{ p.title }}</h6>
-
-          <i class="fas fa-star text-warning" *ngIf="p.rating > 0"></i>
-          <i class="fas fa-star text-warning" *ngIf="p.rating > 1"></i>
-          <i class="fas fa-star text-warning" *ngIf="p.rating > 2"></i>
-          <i class="fas fa-star text-warning" *ngIf="p.rating > 3"></i>
-          <i class="fas fa-star text-warning" *ngIf="p.rating > 4"></i>
-
-          <i class="far fa-star" *ngIf="p.rating < 5"></i>
-          <i class="far fa-star" *ngIf="p.rating < 4"></i>
-          <i class="far fa-star" *ngIf="p.rating < 3"></i>
-          <i class="far fa-star" *ngIf="p.rating < 2"></i>
-          <i class="far fa-star" *ngIf="p.rating < 1"></i>
+          <h6>{{ p.title }}</h6>
+          <h6>{{ p.label }}</h6>
 
           <!-- <p class="card-price">RM {{ p.price | number: '1.2-2' }}</p> -->
         </div>
