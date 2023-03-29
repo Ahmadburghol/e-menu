@@ -53,6 +53,7 @@ class Product {
   price: number;
   rating: number;
   image: string;
+  label: string;
 
   constructor(product: any = {}) {
     this.title = product.title;
@@ -61,5 +62,6 @@ class Product {
     this.price = product.price;
     this.rating = product.rating;
     this.image = product.image;
+    this.label = product.arLabel;
   }
 }

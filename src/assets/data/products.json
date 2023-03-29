@@ -8,7 +8,8 @@
     "height": 600,
     "width": 400,
     "price": 28.1,
-    "rating": 5
+    "rating": 5,
+    "arLabel": "ميلك شيك"
   },
   {
     "image": "https://media.istockphoto.com/id/1127182311/photo/fruit-juices.jpg?s=612x612&w=0&k=20&c=M52yyMvgFUNkPtN9PACB9auB5uuA1CD6zcRsCTX8JsM=",
@@ -19,7 +20,8 @@
     "height": 450,
     "width": 299,
     "price": 29.45,
-    "rating": 4
+    "rating": 4,
+    "arLabel": "عصائر طبيعية"
   },
   {
     "image": "https://becs-table.com.au/wp-content/uploads/2014/01/ice-cream-1.jpg",
@@ -30,7 +32,8 @@
     "height": 450,
     "width": 299,
     "price": 18.95,
-    "rating": 3
+    "rating": 3,
+    "arLabel": "بوظة"
   },
   {
     "image": "https://thebarista.co.uk/wp-content/uploads/2022/06/pexels-royston-d-souza-4728009.jpg",
@@ -41,7 +44,8 @@
     "height": 600,
     "width": 399,
     "price": 17.68,
-    "rating": 4
+    "rating": 4,
+    "arLabel": "باريستا"
   },
   {
     "image": "https://media-cdn.tripadvisor.com/media/photo-s/1a/bb/6b/44/crepes-vs-waffles.jpg",
@@ -52,7 +56,8 @@
     "height": 450,
     "width": 299,
     "price": 17.11,
-    "rating": 2
+    "rating": 2,
+    "arLabel": "وافل وكريب"
   },
   {
     "image": "https://img.taste.com.au/hbNtzI2Q/taste/2021/08/clinkers-cake-173208-2.jpg",
@@ -63,7 +68,8 @@
     "height": 450,
     "width": 675,
     "price": 11.14,
-    "rating": 4
+    "rating": 4,
+    "arLabel": "كيك"
   },
   {
     "image": "https://static.vecteezy.com/system/resources/previews/002/412/377/original/coffee-cup-logo-coffee-shop-icon-design-free-vector.jpg",
@@ -74,6 +80,7 @@
     "height": 450,
     "width": 299,
     "price": 18.19,
-    "rating": 2
+    "rating": 2,
+    "arLabel": "مشروبات ساخنة"
   }
 ]
